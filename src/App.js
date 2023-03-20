@@ -31,7 +31,7 @@ function App() {
         </div>
                <div>
         <h1 className='text-[30px] mb-2 text-white'>{lastData?.name}</h1> 
-        <p className='text-[25px] mb-2 text-white'  >{lastData?.main?.temp}</p>
+        <p className='text-[25px] mb-2 text-white'  >{lastData?.main?.temp} <span>&#8451;</span>  </p>
         <p className='text-[25px] mb-2 text-white'   >{lastData?.weather && lastData?.weather[0].main}</p>
           <Images id={lastData?.weather && lastData?.weather[0].id}/>
        </div>
